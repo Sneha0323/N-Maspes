@@ -9,7 +9,7 @@ return(
        
        <Navbar className="bg-body-tertiary" sticky="top">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img
               src="assets/images/logo/logo.png"
               className="d-inline-block align-top"
@@ -18,7 +18,7 @@ return(
           </Navbar.Brand>
           <Nav className="links">
           <Nav className="me-auto" >
-            <Nav.Link href="#Home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#Features">Features</Nav.Link>
             <Nav.Link href="#Services">Services</Nav.Link>
             <Nav.Link href="#Pricingplan">Pricing Plan</Nav.Link>

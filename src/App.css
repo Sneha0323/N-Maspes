@@ -1,3 +1,25 @@
 *{
   background-color: #fff;
+  margin: auto;
+  padding: auto;
+  background: transparent;
 }
+.myButton {
+  color: rgb(255, 255, 255); font-size: 17px; line-height: 17px; padding: 10px; border-radius: 15px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: radial-gradient(at center center, rgb(42, 27, 241) 0%, rgb(100, 237, 255) 67%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 0px 2px 33px 2px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
+  .myButton:hover {
+  background: #2A1BF1; }
+  .myButton:active {
+  background: #144E75; }
+  #demo {
+    -webkit-box-shadow: -6px 13px 19px 11px rgba(0,0,0,0.56); 
+    box-shadow: -6px 13px 19px 11px rgba(0,0,0,0.56);
+    }
+    #demo {
+     background-color: #1C6EA4;
+     display: block;
+     margin: 50px auto 0;
+     width: 100px;
+     height: 60px;
+     color: #FFF;
+     padding: 10px;
+    }
