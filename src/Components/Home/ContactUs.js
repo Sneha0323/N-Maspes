@@ -1,20 +1,11 @@
 import React from "react";
-import { Container, Navbar } from "react-bootstrap";
-// import Features from "./Features";
-import Register from "./Registration";
 
-function Navbar1() {
+function ContactUs() {
     return(
         <>
-        <Navbar bg="success" expand="sm" variant="dark">
-            <Container>
-                <Navbar.Brand href="/">React BootStrap</Navbar.Brand>
-            </Container>
-            </Navbar>  
-            {/* <Features/> */}
-            <Register/>
+        <h3>Contact Us</h3>
         </>
     )
     
 }
-export default Navbar1
+export default ContactUs

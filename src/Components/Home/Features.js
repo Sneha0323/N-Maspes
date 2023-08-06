@@ -1,44 +1,31 @@
-import React, { useState } from "react";
-import { Button, Card, Col,Container, Row } from "react-bootstrap";
+import React from "react";
+import { Card, Col, Container, Row } from "react-bootstrap";
 
 function Features() {
-
-      let [state,setState] = useState({
-        count : 0
-      });
-
-      let inc =()=>{
-        setState({
-          count : state.count + 1
-        });
-      };
-
-      let dec =()=>{
-        setState({
-          count : state.count - 1
-        });
-      };
-
-
-    return (
-        <>
-            <Container >
-              <Row>
-                <Col xs={2}>
-                  <Card>
-                    <Card.Body>
-                      <p className="display-2">{state.count}</p>
-                      <Button onClick={inc} variant="success" className="m-1">Increment</Button>
-                      <Button onClick={dec} variant="warning" className="m-1">Decrement</Button>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              </Row>
-            </Container>
+  return (
+    <>
+      <Container className="p-3" >
+        <Row className="justify-content-md-center" >
+          <Col md={10}      >
+            <Card className="text-center">
+              <Card.Subtitle className="mt-3">
+                Our Features
+              </Card.Subtitle>
+              <Card.Title className="pt-3" as="h3" >
+                Maximize Your Food Delivery Business Potential With These Powerful Features
+              </Card.Title>
+              <Card.Body>
+                We offer restaurant mobile app development services to everyone interested in the food industry. Our restaurant app developers incorporate cutting-edge and one-of-a-kind features into your restaurant app to make it user-friendly, intuitive, and scalable. The following is a list of common restaurant app features.
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
       
-        </>
-      
-    )
+
+    </>
+
+  )
 
 }
 
