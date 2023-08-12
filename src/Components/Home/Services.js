@@ -1,8 +1,21 @@
 import React from "react";
-import { Container, Row, Col, Image, Card, CardGroup } from "react-bootstrap";
-import CardHeader from "react-bootstrap/esm/CardHeader";
+import { Container, Row, Col, Image, Card } from "react-bootstrap";
 
 function Services() {
+    const Servi = [
+        {
+            "id": 1,
+            "img": "https://maspes.io/static/media/salon.a7faf726e37331e71b06868933cca5cc.svg",
+            "Title": "Salon Booking Solutions",
+            "Text": " We help you develop salon booking apps to book appointments with their preferred stylists easily. We build app features like real-time availability, appointment reminders, and customer profiles to improve the customer experience."
+        },
+        {
+            "id": 2,
+            "img": "https://maspes.io/static/media/portfolio.cd87b795bcf5a082ee9518c496a6fc91.svg",
+            "Title": "Company Portfolio Website",
+            "Text": " A company portfolio website is essential for showcasing your business and brand. Our team of experts will help design a website that reflects your company's unique value proposition, goals, and services."
+        }
+    ]
     return (
         <>
             <Container className="p-3">
@@ -26,8 +39,8 @@ function Services() {
                 </Row>
             </Container>
             <Container className="p-3">
-                <Row xs={1} md={3} className="g-5">
-                    <Card border="light" className="px-4">
+                <Row sm={1} md={3} className="g-5 justify-content-around">
+                    <Card border="light" className="px-4  bg-{variant}">
                         <Row className="p-3">
                             <Col md={4} className="mt-2">
                                 <Card.Img variant="top" src="https://maspes.io/static/media/salon.a7faf726e37331e71b06868933cca5cc.svg" /></Col>
@@ -135,25 +148,8 @@ function Services() {
                             Our social media apps provide businesses with a powerful platform for engaging with customers on social media. The apps include features such as social media integration, real-time analytics, and customer engagement tools
                         </Card.Text>
                     </Card>
-</Row>
+                </Row>
             </Container>
-            <Row xs={1} md={4} className="g-5">
-                {Array.from({ length: 8 }).map((_, idx) => (
-                    <Col key={idx}>
-                        <Card>
-                            <Card.Img variant="top" src="holder.js/100px160" />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit
-                                    longer.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                ))}
-            </Row>
         </>
     )
 

@@ -4,10 +4,11 @@ import Banner from './Components/Home/Banner';
 import Features from './Components/Home/Features';
 import Services from './Components/Home/Services';
 import Applicationlink from './Components/Home/Applicationlink';
-// import Pricingplan from './Components/Home/Pricingplan'
-// import About from './Components/Home/About'
-// import Whyapplication from './Components/Home/WhyApplication'
-// import ContactUs from './Components/Home/ContactUs'
+import Pricingplan from './Components/Home/Pricingplan'
+import About from './Components/Home/About'
+import Whyapplication from './Components/Home/WhyApplication'
+import ContactUs from './Components/Home/ContactUs'
+import Footer from './Components/Footer';
 // import TimesheetModal from './Components/Home/TimesheetModal';
 
 function App() {
@@ -18,10 +19,11 @@ function App() {
          <Features/>
          <Applicationlink/>
         <Services/> 
-        {/* <Pricingplan/>
+        <Pricingplan/>
         <Whyapplication/>
         <About/>
-        <ContactUs/> */}
+        <ContactUs/>
+        <Footer/>
         
      </div>
   );
