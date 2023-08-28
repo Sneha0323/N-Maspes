@@ -4,11 +4,14 @@ import { Container, Card, Row, Col, Image, Button } from "react-bootstrap";
 function Pricingplan() {
     return (
         <>
-            <Container>
-                <Row className="justify-content-md-center">
+            <Container >
+                <Row className="justify-content-md-center" id="Pricingplan">
                     <Col md={8} sm={12}>
-                        <Card className="text-center mt-1 pt-4" border="light">
-                            <Card.Subtitle className="pt-2">Princing Plan</Card.Subtitle>
+                        <Card className="text-center mt-1 pt-4" border="light" style={{ alignItems: 'center' }}>
+                            <Card.Subtitle className="py-2" style={{ color: '#539E83' }}>
+                                Princing Plan
+                            </Card.Subtitle>
+                            <Card.Img src="assets/images/about/line.png" style={{ width: '4%' }} />
                             <Card.Title className="p-3">Our Customer-Centered Plans</Card.Title>
                             <Card.Text className="px-1">We believe in putting our customers first, which is why all our plans are designed with their needs in mind. From flexible payment options to personalized support, our customer-centered plans ensure that you get the best possible experience with our services.</Card.Text>
                         </Card>
@@ -17,111 +20,111 @@ function Pricingplan() {
             </Container>
             <Container>
                 <Row className="mt-4 g-4">
-                    <Col md={4} sm={12}>
-                        <Card  bg="transparent" text="dark" className="px-4" border="light" >
-                        <Card.Header>
-                            <Card.Subtitle className="pt-4">Bronze</Card.Subtitle>
-                            <Card.Text as="h3">
-                                $19</Card.Text>
-                            <span> / Month</span>
-                            <Card.Text>Get 7 Days Free Trial</Card.Text>
+                    <Col md={4} sm={6}>
+                        <Card bg="transparent" text="dark" className="px-4" border="light" data-aos="fade-up" data-aos-duration="1800">
+                            <Card.Header>
+                                <Card.Subtitle className="pt-4">Bronze</Card.Subtitle>
+                                <Card.Text as="h3">
+                                    $19</Card.Text>
+                                <span> / Month</span>
+                                <Card.Text>Get 7 Days Free Trial</Card.Text>
                             </Card.Header>
                             <Card.Body>
-                            <ul className="list-unstyled">
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "}Web & Mobile Optimized
-                                </li>
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "}CLifetime Free Usage
-                                </li>
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "}Lifetime Free Usage
-                                </li>
-                                <li className="my-3" style={{color:"gray"}}><Image src="https://maspes.io/static/media/Right-sign-grey.0ab91d005868f71f000866bc011a6a8d.svg" alt="right-sign"/>
-                                {" "} 3 Month Support
-                                </li>
-                                <li className="my-3" style={{color:"gray"}}><Image src="https://maspes.io/static/media/Right-sign-grey.0ab91d005868f71f000866bc011a6a8d.svg" alt="right-sign"/>
-                                {" "} No Installation Charges
-                                </li>
-                                <li className="my-3" style={{color:"gray"}}><Image src="https://maspes.io/static/media/Right-sign-grey.0ab91d005868f71f000866bc011a6a8d.svg" alt="right-sign"/>
-                                {" "} Inbuilt Malware Scanner
-                                </li>
-                            </ul>
+                                <ul className="list-unstyled">
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "}Web & Mobile Optimized
+                                    </li>
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "}CLifetime Free Usage
+                                    </li>
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "}Lifetime Free Usage
+                                    </li>
+                                    <li className="my-3" style={{ color: "gray" }}><Image src="https://maspes.io/static/media/Right-sign-grey.0ab91d005868f71f000866bc011a6a8d.svg" alt="right-sign" />
+                                        {" "} 3 Month Support
+                                    </li>
+                                    <li className="my-3" style={{ color: "gray" }}><Image src="https://maspes.io/static/media/Right-sign-grey.0ab91d005868f71f000866bc011a6a8d.svg" alt="right-sign" />
+                                        {" "} No Installation Charges
+                                    </li>
+                                    <li className="my-3" style={{ color: "gray" }}><Image src="https://maspes.io/static/media/Right-sign-grey.0ab91d005868f71f000866bc011a6a8d.svg" alt="right-sign" />
+                                        {" "} Inbuilt Malware Scanner
+                                    </li>
+                                </ul>
                             </Card.Body>
                             <Card.Footer>
-                            <Button variant="success" bg="transparent" className="mb-3">Get Started</Button>
+                                <Button variant="success" bg="transparent" className="mb-3">Get Started</Button>
                             </Card.Footer>
                         </Card>
                     </Col>
-                    <Col md={4}>
-                        <Card  bg="success" text="light" className="px-4" border="light"  style={{borderRadius:"18px"}} >
+                    <Col md={4} sm={6}>
+                        <Card bg="success" text="light" className="px-4" border="light" style={{ borderRadius: "18px" }} data-aos="fade-up" data-aos-duration="2000">
                             <Card.Header>
-                            <Card.Subtitle className="pt-4 mx-3">Silver</Card.Subtitle>
-                            <Card.Text className="mx-3" as="h3">
-                                $49</Card.Text>
-                            <span> / Month</span>
-                            <Card.Text className="mx-3">Get 7 Days Free Trial</Card.Text>
+                                <Card.Subtitle className="pt-4 mx-3" >Silver</Card.Subtitle>
+                                <Card.Text className="mx-3" as="h3">
+                                    $49</Card.Text>
+                                <span> / Month</span>
+                                <Card.Text className="mx-3">Get 7 Days Free Trial</Card.Text>
                             </Card.Header>
                             <Card.Body>
-                            <ul className="list-unstyled">
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "}Web & Mobile Optimized
-                                </li>
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "}CLifetime Free Usage
-                                </li>
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "}Lifetime Free Usage
-                                </li>
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "} 3 Month Support
-                                </li>
-                                <li className="my-3" style={{color:"rgb(134, 232, 203)"}}><Image src="https://maspes.io/static/media/Right-sign-grey.0ab91d005868f71f000866bc011a6a8d.svg" alt="right-sign"/>
-                                {" "} No Installation Charges
-                                </li>
-                                <li className="my-3" style={{color:"rgb(134, 232, 203)"}}><Image src="https://maspes.io/static/media/Right-sign-grey.0ab91d005868f71f000866bc011a6a8d.svg" alt="right-sign"/>
-                                {" "} Inbuilt Malware Scanner
-                                </li>
-                            </ul>
+                                <ul className="list-unstyled">
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "}Web & Mobile Optimized
+                                    </li>
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "}CLifetime Free Usage
+                                    </li>
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "}Lifetime Free Usage
+                                    </li>
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "} 3 Month Support
+                                    </li>
+                                    <li className="my-3" style={{ color: "rgb(134, 232, 203)" }}><Image src="https://maspes.io/static/media/Right-sign-grey.0ab91d005868f71f000866bc011a6a8d.svg" alt="right-sign" />
+                                        {" "} No Installation Charges
+                                    </li>
+                                    <li className="my-3" style={{ color: "rgb(134, 232, 203)" }}><Image src="https://maspes.io/static/media/Right-sign-grey.0ab91d005868f71f000866bc011a6a8d.svg" alt="right-sign" />
+                                        {" "} Inbuilt Malware Scanner
+                                    </li>
+                                </ul>
                             </Card.Body>
                             <Card.Footer>
-                            <Button variant="light" className="mb-3">Get Started</Button>
+                                <Button variant="light" className="mb-3">Get Started</Button>
                             </Card.Footer>
                         </Card>
-                        </Col>
-                    <Col md={4}>
-                    <Card  bg="transparent" text="dark" className="px-4" border="light">
+                    </Col>
+                    <Col md={4} sm={6}>
+                        <Card bg="transparent" text="dark" className="px-4" border="light" data-aos="fade-up" data-aos-duration="2200">
                             <Card.Header>
-                            <Card.Subtitle className="pt-4">Bronze</Card.Subtitle>
-                            <Card.Text as="h3">
-                                $19</Card.Text>
-                            <span> / Month</span>
-                            <Card.Text>Get 7 Days Free Trial</Card.Text>
+                                <Card.Subtitle className="pt-4">Bronze</Card.Subtitle>
+                                <Card.Text as="h3">
+                                    $19</Card.Text>
+                                <span> / Month</span>
+                                <Card.Text>Get 7 Days Free Trial</Card.Text>
                             </Card.Header>
                             <Card.Body>
-                            <ul className="list-unstyled">
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "}Web & Mobile Optimized
-                                </li>
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "}CLifetime Free Usage
-                                </li>
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "}Lifetime Free Usage
-                                </li>
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "} 3 Month Support
-                                </li>
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "} No Installation Charges
-                                </li>
-                                <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign"/>
-                                {" "} Inbuilt Malware Scanner
-                                </li>
-                            </ul>
+                                <ul className="list-unstyled">
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "}Web & Mobile Optimized
+                                    </li>
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "}CLifetime Free Usage
+                                    </li>
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "}Lifetime Free Usage
+                                    </li>
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "} 3 Month Support
+                                    </li>
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "} No Installation Charges
+                                    </li>
+                                    <li className="my-3"><Image src="https://maspes.io/static/media/Right-sign.fc7629e44440f02034b76c913b86e1f6.svg" alt="right-sign" />
+                                        {" "} Inbuilt Malware Scanner
+                                    </li>
+                                </ul>
                             </Card.Body>
                             <Card.Footer bg="dark">
-                            <Button variant="success" className="mb-3">Get Started</Button>
+                                <Button variant="success" className="mb-3">Get Started</Button>
                             </Card.Footer>
                         </Card>
                     </Col>
@@ -132,10 +135,10 @@ function Pricingplan() {
                     <Col md={8} sm={12}>
                         <Card className="text-center py-5" border="light">
                             <Card.Title>
-                            Restaurant App Models We Serve
+                                Restaurant App Models We Serve
                             </Card.Title>
                             <Card.Text className="py-3">
-                            As a leading food delivery app development company, we help our clients get customized solutions as per their needs and budget. Here are two top models that we serve:
+                                As a leading food delivery app development company, we help our clients get customized solutions as per their needs and budget. Here are two top models that we serve:
                             </Card.Text>
                         </Card>
                     </Col>
@@ -144,7 +147,7 @@ function Pricingplan() {
             <Container>
                 <Row>
                     <Col md={6}>
-                        <Image src="https://maspes.io/static/media/restaurant.4738ce291939191cacbe6acaa5f46c7c.svg" alt="resturant"/>
+                        <Image src="https://maspes.io/static/media/restaurant.4738ce291939191cacbe6acaa5f46c7c.svg" alt="resturant" />
                     </Col>
                     <Col md={6}>
                         <Row className="mt-4">
@@ -155,10 +158,10 @@ function Pricingplan() {
                             </Card>
                         </Row>
                         <Row>
-                        <Card className="p-3" border="light">
+                            <Card className="p-3" border="light">
                                 <Card.Title>Admin App - Web App</Card.Title>
                                 <Card.Text className="mt-2">
-                                This model will give you an admin app along with a web app. It is ideal for one who does not have much funds to invest in multiple apps. The restaurant staff uses the admin app to manage menus, orders, and reservations, while the web application serves as the customer-facing platform. Customers can place their orders and make reservations from any device with internet access.
+                                    This model will give you an admin app along with a web app. It is ideal for one who does not have much funds to invest in multiple apps. The restaurant staff uses the admin app to manage menus, orders, and reservations, while the web application serves as the customer-facing platform. Customers can place their orders and make reservations from any device with internet access.
                                 </Card.Text>
                             </Card>
                         </Row>

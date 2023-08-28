@@ -9,23 +9,22 @@ import About from './Components/Home/About'
 import Whyapplication from './Components/Home/WhyApplication'
 import ContactUs from './Components/Home/ContactUs'
 import Footer from './Components/Footer';
-// import TimesheetModal from './Components/Home/TimesheetModal';
 
 function App() {
   return (
-        <div className="App">
-        <Header/>  
-        <Banner/> 
-         <Features/>
-         <Applicationlink/>
-        <Services/> 
-        <Pricingplan/>
-        <Whyapplication/>
-        <About/>
-        <ContactUs/>
-        <Footer/>
-        
-     </div>
+    <div className="App">
+      <Header />
+      <Banner />
+      <Features />
+      <Applicationlink />
+      <Services />
+      <Pricingplan />
+      <Whyapplication />
+      <About />
+      <ContactUs />
+      <Footer />
+
+    </div>
   );
 }
 

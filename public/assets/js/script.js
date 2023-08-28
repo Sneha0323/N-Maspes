@@ -89,24 +89,24 @@
     nextArrow: '<buttton class="nextarrow"></buttton>',
     prevArrow: '<buttton class="prevarrow"></buttton>',
     responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          arrows: false
-        }
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2
       }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        arrows: false
+      }
+    }
     ]
   });
 
@@ -119,23 +119,23 @@
     nextArrow: '<buttton class="nextarrow"></buttton>',
     prevArrow: '<buttton class="prevarrow"></buttton>',
     responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1
-        }
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3
       }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
     ]
   });
 
@@ -147,23 +147,23 @@
     dot: false,
     autoplay: true,
     responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1
-        }
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2
       }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
     ]
   });
 

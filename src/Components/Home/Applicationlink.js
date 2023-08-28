@@ -37,8 +37,8 @@ const Applicationlink = () => {
                                 <Tab.Content>
                                     <Tab.Pane eventKey={1}>
                                         <Row className=" mt-2">
-                                            <Col md={6} sm={12} className="p-1">
-                                                <Image src="https://maspes.io/static/media/feature.8629c17b38ad86c020e2d2bd33e98d9d.svg" />
+                                            <Col md={6} sm={12} className="p-1" >
+                                                <Image src="assets\images\svg\feature.svg" />
                                             </Col>
                                             <Col md={6} sm={12} className="p-5">
                                                 <h4>Easy Order Flow</h4>
@@ -50,7 +50,7 @@ const Applicationlink = () => {
                                     <Tab.Pane eventKey={2}>
                                         <Row className=" mt-2">
                                             <Col md={6} sm={12} className="p-1">
-                                                <Image src="https://maspes.io/static/media/addingDish.8149c9758433f3498d3060ac8aec8371.svg" />
+                                                <Image src="assets\images\svg\addingDish.svg" />
                                             </Col>
                                             <Col md={6} sm={12} className="p-5">
                                                 <h4>Adding Dishes To Favorites</h4>
@@ -62,7 +62,7 @@ const Applicationlink = () => {
                                     <Tab.Pane eventKey={3}>
                                         <Row className=" mt-2">
                                             <Col md={6} sm={12} className="p-1">
-                                                <Image src="https://maspes.io/static/media/AddOptFun.ab92e5deaa46a1733ea0b26ebb229f74.svg" />
+                                                <Image src="assets\images\svg\AddOptFun.svg" />
                                             </Col>
                                             <Col md={6} sm={12} className="p-5">
                                                 <h4>Additional Options Functionality</h4>
@@ -74,7 +74,7 @@ const Applicationlink = () => {
                                     <Tab.Pane eventKey={4}>
                                         <Row className=" mt-2">
                                             <Col md={6} sm={12} className="p-1">
-                                                <Image src="https://maspes.io/static/media/CouponCode.ea06c2fcbcfb1f4e24dfad0ca736dc70.svg" />
+                                                <Image src="assets\images\svg\CouponCode.svg" />
                                             </Col>
                                             <Col md={6} sm={12} className="p-5">
                                                 <h4>Coupon Code For Offers</h4>
@@ -86,7 +86,7 @@ const Applicationlink = () => {
                                     <Tab.Pane eventKey={5}>
                                         <Row className=" mt-2">
                                             <Col md={6} sm={12} className="p-1">
-                                                <Image src="https://maspes.io/static/media/TableBookings.428517f463acdb668eaf9b187c983068.svg" />
+                                                <Image src="assets\images\svg\TableBookings.svg" />
                                             </Col>
                                             <Col md={6} sm={12} className="p-5">
                                                 <h4>Table Bookings</h4>
@@ -98,7 +98,7 @@ const Applicationlink = () => {
                                     <Tab.Pane eventKey={6}>
                                         <Row className=" mt-2">
                                             <Col md={6} sm={12} className="p-1">
-                                                <Image src="https://maspes.io/static/media/Real-Time.a8269de7da212dbc788d096a0d22b3f6.svg" />
+                                                <Image src="assets\images\svg\Real-Time.svg" />
                                             </Col>
                                             <Col md={6} sm={12} className="p-5">
                                                 <h4>Real-Time Order Notifications</h4>
@@ -110,7 +110,7 @@ const Applicationlink = () => {
                                     <Tab.Pane eventKey={7}>
                                         <Row className=" mt-2">
                                             <Col md={6} sm={12} className="p-1">
-                                                <Image src="https://maspes.io/static/media/ReqInvoice.a3128a4acfe8b5153f32ad94d6bd02fd.svg" />
+                                                <Image src="public\assets\images\svg\ReqInvoice.svg" />
                                             </Col>
                                             <Col md={6} sm={12} className="p-5">
                                                 <h4>In Request Invoice</h4>
@@ -127,7 +127,5 @@ const Applicationlink = () => {
             </Container>
         </>
     )
-
-
 }
 export default Applicationlink

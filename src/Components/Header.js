@@ -1,39 +1,45 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
+import { Button, Nav, Navbar, Container } from 'react-bootstrap';
+
 
 function Header() {
-  
+  const handleClick = (e) => {
+    e.preventDefault();
+    const target = e.target.getAttribute("href");
+    const location = document.querySelector(target).offsetTop;
+
+    window.scrollTo({
+      left: 0,
+      top: location - 100,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
-    <Container >
-      <Navbar className="m-4" sticky="top">
+      <Navbar className="my-4 bg-body-tertiary" sticky="top" collapseOnSelect expand="lg">
         <Container>
           <Navbar.Brand href="/" className='p-1'>
             <img
               src="assets/images/logo/logo.png"
               className="d-inline-block align-top mb-2"
-              alt="Maspes logo"
-            />
+              alt="Maspes logo" />
           </Navbar.Brand>
-          <Nav className="links btn-outline-{variant}">
-            <Nav className="mx-3 " style={{fontSize:'18px'}}>
-              <Nav.Link className="mx-2" href="/">Home</Nav.Link>
-              <Nav.Link className="mx-2" href="#Features">Features</Nav.Link>
-              <Nav.Link className="mx-2" href="#Services">Services</Nav.Link>
-              <Nav.Link className="mx-2" href="#Pricingplan">Pricing Plan</Nav.Link>
-              <Nav.Link className="mx-2" href="#Why-Application">Why Application</Nav.Link>
-              <Nav.Link className="mx-2" href="#About">About</Nav.Link>
-              <Nav.Link className="mx-2" href="#Contact-Us">Contact Us</Nav.Link>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto justify-content-center mx-5" style={{ fontSize: '20px' }} as="h6">
+              <Nav.Link className="mx-2" onClick={handleClick} href="#Home" >Home</Nav.Link>
+              <Nav.Link className="mx-2" onClick={handleClick} href="#Features">Features</Nav.Link>
+              <Nav.Link className="mx-2" onClick={handleClick} href="#Services">Services</Nav.Link>
+              <Nav.Link className="mx-2" onClick={handleClick} href="#Pricingplan">Pricing Plan</Nav.Link>
+              <Nav.Link className="mx-2" onClick={handleClick} href="#Why-Application">Why Application</Nav.Link>
+              <Nav.Link className="mx-2" onClick={handleClick} href="#About">About</Nav.Link>
+              <Nav.Link className="mx-2" onClick={handleClick} href="#Contact-Us">Contact Us</Nav.Link>
             </Nav>
-          </Nav>
-          <Button variant="success">Get the App</Button>
+            <Button className="justify-content-end" variant="success">Get the App</Button>
+          </Navbar.Collapse>
         </Container>
-      </Navbar>
-            </Container>
+      </Navbar >
     </>
-
   )
 }
 export default Header;
