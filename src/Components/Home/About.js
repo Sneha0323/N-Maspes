@@ -23,7 +23,7 @@ function About() {
                         </Card>
                     </Col>
                     <Col md={6} sm={12}>
-                        <Image src="https://maspes.io/assets/images/about/about.png" alt="about" data-aos="zoom-in-down" />
+                        <Image src="assets/images/about/about.png" alt="about" data-aos="zoom-in-down" />
                     </Col>
                 </Row>
             </Container>
